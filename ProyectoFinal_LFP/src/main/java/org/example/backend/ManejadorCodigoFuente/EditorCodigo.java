@@ -154,7 +154,9 @@ public class EditorCodigo extends JTextPane {
              if (token.getTipoToken() == TipoToken.NO_RECONOCIDO) {
                  throw new ErroresCodigoException();
              }
-             tokensLimpios.add(token);
+             if (token.getTipoToken() != TipoToken.COMENTARIO) {
+                 tokensLimpios.add(token);
+             }
          }
         return Optional.of(tokensLimpios);
     }

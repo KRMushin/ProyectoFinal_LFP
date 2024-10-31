@@ -1,7 +1,19 @@
 digraph G {
-    meeeeee [label=<
+    empleados2 [label=<
         <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
-            <TR><TD COLSPAN="2"><B>meeeeee</B></TD></TR>
+            <TR><TD COLSPAN="2"><B>empleados2</B></TD></TR>
+            <TR><TD><B>id</B></TD><TD>SERIAL</TD></TR>
+            <TR><TD><B>nombre</B></TD><TD>VARCHAR 100</TD></TR>
+            <TR><TD><B>puesto</B></TD><TD>VARCHAR 50</TD></TR>
+            <TR><TD><B>salario</B></TD><TD>DECIMAL 10 <br/>2</TD></TR>
+            <TR><TD><B>fecha_contratacion</B></TD><TD>DATE</TD></TR>
+            <TR><TD><B>departamento_id</B></TD><TD>INTEGER</TD></TR>
+            <TR><TD><B>email</B></TD><TD>VARCHAR 100</TD></TR>
+        </TABLE>
+    > shape=plaintext];
+    empleados3 [label=<
+        <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+            <TR><TD COLSPAN="2"><B>empleados3</B></TD></TR>
             <TR><TD><B>id</B></TD><TD>SERIAL</TD></TR>
             <TR><TD><B>nombre</B></TD><TD>VARCHAR 100</TD></TR>
             <TR><TD><B>puesto</B></TD><TD>VARCHAR 50</TD></TR>

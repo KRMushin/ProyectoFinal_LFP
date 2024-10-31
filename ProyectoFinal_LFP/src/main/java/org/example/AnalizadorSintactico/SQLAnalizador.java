@@ -210,11 +210,6 @@ public class SQLAnalizador {
         }
     }
 
-    private void analizarCreateDatabase() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    
     /* GETTERS Y SETTERS DE TOKENS */
 
     public List<ModificacionTabla> getModificaciones() {
