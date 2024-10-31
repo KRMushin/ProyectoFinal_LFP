@@ -1,0 +1,39 @@
+-- Este es un comentario de línea
+CREATE DATABASE mi_base;
+CREATE TABLE empleados (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    edad INTEGER,
+    salario DECIMAL(10, 2),
+    fecha_ingreso DATE DEFAULT '2024-10-15'
+);
+
+INSERT INTO empleados (id, nombre, edad, salario) VALUES (1, 'Juan Perez', 30, 55000.00);
+INSERT INTO empleados (id, nombre, edad, salario) VALUES (2, 'Maria Gomez', 25, 47000.00);
+
+SELECT nombre, salario 
+FROM empleados 
+WHERE edad > 25 
+ORDER BY salario DESC;
+
+UPDATE empleados 
+SET salario = salario * 1.05 
+WHERE fecha_ingreso < '2020-01-01';
+
+DELETE FROM empleados 
+WHERE edad < 24;
+
+-- Prueba de operadores
+SELECT * FROM productos WHERE precio >= 50 AND cantidad < 100;
+
+-- Prueba de funciones de agregación
+SELECT SUM(salario), AVG(edad), COUNT(*) 
+FROM empleados;
+
+-- Prueba de identificadores en snake_case
+SELECT categoria_por_rol, departamento_publico 
+FROM departamento;
+
+-- Prueba de valores booleanos
+UPDATE empleados SET activo = TRUE WHERE id = 1;
+
